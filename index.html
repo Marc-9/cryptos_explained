@@ -1,0 +1,164 @@
+<html>
+	<title>Cryptos Explained</title>
+	
+	<head>
+		<!-- Links to my CSS document -->
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		
+		<!-- My main heading -->
+		<h1 align=center>Cryptos Explained</h1>
+		
+		<!-- My Sub-heading -->
+		<h2 align=center>Explainations, Prices, WhitePapers and more</h2>
+		
+		<!-- Allows me to have jquery code at the bottom of the page -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+		
+		<!-- Kind of makes it mobile friendly -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		</head>
+		
+			<header>
+				<!-- Navigation bar -->
+				<ul>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Vocabulary</a></li>
+					<input type="text" id="myinput" name="search" placeholder="Search..." style="border-radius: 4px;">
+				</ul>
+			</header><br>
+			
+	<body>
+		<!--Lots of Div classes so I can seperate the main and the footer -->
+		<div id="wrap">
+			<div id="main" class="clearfix">
+				<!-- All my images -->
+				<div class="image123">
+				
+					<div class="imgContainer">
+						<a href="cryptos/btc.html"><img src="img/btc.png" alt="Bitcoin"><div class="overlay"><div class="text">Bitcoin</div></div></a>
+					</div>
+						
+					<div class="imgContainer">
+						<a href="cryptos/eth.html"><img src="img/ethereum.png" alt="Ethereum"><div class="overlay"><div class="text">Ethereum</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="cryptos/ripple.html"><img src="img/ripple.png" alt="Ripple"><div class="overlay"><div class="text">Ripple</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/Bitcoin_Cash.png" alt="Bitcoin Cash"><div class="overlay"><div class="text">Bitcoin Cash</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/ada.png" alt="Cardano"><div class="overlay"><div class="text">Cardano</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/NEM.png" alt="NEM"> <div class="overlay"><div class="text">NEM</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/Litecoin.png" alt="LiteCoin"><div class="overlay"><div class="text">LiteCoin</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/stellar.png" alt="Stellar Lumens"><div class="overlay"><div class="text">Stellar Lumens</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/iota.png" alt="IOTA"><div class="overlay"><div class="text">IOTA</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/dash.png" alt="Dash"><div class="overlay"><div class="text">Dash</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/neo.png" alt="NEO"><div class="overlay"><div class="text">NEO</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/tron.png" alt="Tron"><div class="overlay"><div class="text">Tron</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/monero.png" alt="Monero"><div class="overlay"><div class="text">Monero</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/eos.png" alt="EOS"><div class="overlay"><div class="text">EOS</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/icon.png" alt="ICON"><div class="overlay"><div class="text">ICON</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/bitcoingold.png" alt="Bitcoin Gold"><div class="overlay"><div class="text">Bitcoin Gold</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/qtum.svg" alt="QTUM"><div class="overlay"><div class="text">QTUM</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/ethereum_classic.png" alt="Ethereum Classic"><div class="overlay"><div class="text">Ethereum Classic</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/raiblocks.png" alt="RaiBlocks"><div class="overlay"><div class="text">RaiBlocks</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/lisk.png" alt="Lisk"><div class="overlay"><div class="text">Lisk</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/verge.png" alt="Verge"><div class="overlay"><div class="text">Verge</div></div></a>   
+					</div>
+					
+			</div>
+				<!-- Pages -->
+				<div id="footer">
+					<div class="pagination" align="center">
+						<a href="#">&laquo;</a>
+						<a class="active" href="#">1</a>
+						<a href="page2.html">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">&raquo;</a>
+					</div>
+				</div>
+    
+		</div>
+	
+	</body>
+
+</html>
+
+
+<script>
+
+
+$("#myinput").keyup(function() {
+    var val = $.trim(this.value);
+    if (val === "")
+        $('img').show();
+    else {
+        $('img').hide();
+        val = val.split(" ").join("\\ ");
+        console.log(val)
+        $("img[alt*=" + val + " i]").show();
+    }
+});
+
+$(".img").wrap('<div class="alt-wrap"/>');
+
+$(".img").each(function() {
+    $(this).after('<p class="alt">' + $(this).attr('alt') + '</p>');
+  })
+  
+ $( ".image123" ).load( 'page2.html .imgContainer .text:contains("' + searchedText + '")' );
+   
+</script>

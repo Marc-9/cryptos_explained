@@ -1,0 +1,130 @@
+<html>
+	<title>Cryptos Explained pg.2</title>
+	
+	<head>
+		<!-- Links to my CSS document -->
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		
+		<!-- My main heading -->
+		<h1 align=center>Cryptos Explained</h1>
+		
+		<!-- My Sub-heading -->
+		<h2 align=center>Explainations, Prices, WhitePapers and more</h2>
+		
+		<!-- Allows me to have jquery code at the bottom of the page -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+		
+		<!-- Kind of makes it mobile friendly -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		</head>
+		
+			<header>
+				<!-- Navigation bar -->
+				<ul>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Vocabulary</a></li>
+					<input type="text" id="myinput" name="search" placeholder="Search..." style="border-radius: 4px;">
+				</ul>
+			</header><br>
+			
+	<body>
+		<!--Lots of Div classes so I can seperate the main and the footer -->
+		<div id="wrap">
+			<div id="main" class="clearfix">
+				<!-- All my images -->
+				<div class="image123">
+				
+					<div class="imgContainer">
+						<a href="#"><img src="img/omisego.png" alt="OmiseGo"><div class="overlay"><div class="text">OmiseGO</div></div></a>   
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/tether.png" alt="Tether"><div class="overlay"><div class="text">Tether</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/sia.svg" alt="Sia"><div class="overlay"><div class="text">Sia</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/ardor.svg" alt="Ardor"><div class="overlay"><div class="text">Ardor</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/populous.png" alt="Populous"><div class="overlay"><div class="text">Populous</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/zcash.png" alt="Zcash"><div class="overlay"><div class="text">Zcash</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/binance.png" alt="Binance"><div class="overlay"><div class="text">Binance</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/stratis.png" alt="Stratis"><div class="overlay"><div class="text">Stratis</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/vechain.png" alt="VeChain"><div class="overlay"><div class="text">VeChain</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/bytecoin.svg" alt="ByteCoin"><div class="overlay"><div class="text">ByteCoin</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/smartcash.png" alt="SmartCash"><div class="overlay"><div class="text">SmartCash</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/status.svg" alt="Status"><div class="overlay"><div class="text">Status</div></div></a>
+					</div>
+					
+					<div class="imgContainer">
+						<a href="#"><img src="img/steem.png" alt="Steem"><div class="overlay"><div class="text">Steem</div></div></a>
+					</div>
+					
+					
+				</div>
+			
+			<!-- Pages -->
+				<div id="footer">
+					<div class="pagination" align="center">
+						<a href="#">&laquo;</a>
+						<a href="index.html">1</a>
+						<a class="active" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">&raquo;</a>
+					</div>
+				</div>
+    
+		</div>
+	
+	</body>
+
+</html>
+<script>
+
+
+$("#myinput").keyup(function() {
+    var val = $.trim(this.value);
+    if (val === "")
+        $('img').show();
+    else {
+        $('img').hide();
+        val = val.split(" ").join("\\ ");
+        console.log(val)
+        $("img[alt*=" + val + " i]").show();
+    }
+});
+
+$(".img").wrap('<div class="alt-wrap"/>');
+
+$(".img").each(function() {
+    $(this).after('<p class="alt">' + $(this).attr('alt') + '</p>');
+  })
+   
+</script>
